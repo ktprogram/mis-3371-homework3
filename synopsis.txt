@@ -1,0 +1,8 @@
+Kenny Truong
+2033122
+Homework 3 Synopsis
+This is my synopsis for Assignment 3 and it is for my website FedMed Medical, which is a healthcare facility that is like a hospital. 
+This is just a basic form, as I want to have the design more colorful and better on the eyes for an average person, however, that is something I don’t really know how to do. 
+Of course I would like to improve, but right now, this is something I am proud of and the Javascript work I did was also good in my humble opinion. I will continue to work on it and 
+make it more polished. My website is going to have a more dynamic background that changes, however, the more I thought about it, the less it made sense for a healthcare facility. 
+As the users, would not care as they are there to register for a health check up. 
