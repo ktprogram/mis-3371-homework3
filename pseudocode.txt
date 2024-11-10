@@ -1,0 +1,27 @@
+[Start] --> [Initialize isValid = true]
+
+[Check each field] --> 
+    [IF field is required] -->
+        [IF field is empty]
+            --> [Display error message near field]
+            --> [Set isValid = false]
+        [ELSE] --> [Validate each field based on type]
+
+[Check specific field type] -->
+    - "First Name"/"Last Name": [IF contains non-letter characters] --> [Display error] --> [isValid = false]
+    - "Middle Initial": [IF not single letter] --> [Display error] --> [isValid = false]
+    - "Date of Birth": [IF invalid/future date] --> [Display error] --> [isValid = false]
+    - "SSN": [IF not 9 digits/non-digit chars] --> [Display error] --> [isValid = false]
+    - "Phone Number": [IF not ###-###-#### format] --> [Display error] --> [isValid = false]
+    - "Address 1": [IF empty] --> [Display error] --> [isValid = false]
+    - "Email": [IF not email format] --> [Display error] --> [isValid = false]
+    - "User ID": [IF empty] --> [Display error] --> [isValid = false]
+    - "Password": 
+        [IF not 8 chars/special char] --> [Display error] --> [isValid = false]
+        [IF does not match confirm password] --> [Display error] --> [isValid = false]
+
+[After all fields checked] --> 
+    [IF isValid = true] --> [Allow form submission or show success message]
+    [ELSE] --> [Prevent submission and show errors]
+
+[End]
